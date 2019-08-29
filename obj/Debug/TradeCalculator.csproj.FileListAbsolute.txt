@@ -1,0 +1,10 @@
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\bin\Debug\TradeCalculator.exe.config
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\bin\Debug\TradeCalculator.exe
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\bin\Debug\TradeCalculator.pdb
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.csprojAssemblyReference.cache
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.Form1.resources
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.Properties.Resources.resources
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.csproj.GenerateResource.cache
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.exe
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.pdb
