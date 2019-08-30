@@ -33,11 +33,12 @@ namespace TradeCalculator
             txt_Result.Text = "";
             
         }
-        
         private void Btn_Calculate_Click(object sender, EventArgs e)
         {
+
             
-            if(txt_Leverage.Text == "" || txt_Investment.Text == "" || txt_BuyValue.Text == "" || txt_SellValue.Text == "")
+
+            if (txt_Leverage.Text == "" || txt_Investment.Text == "" || txt_BuyValue.Text == "" || txt_SellValue.Text == "")
             {
                 MessageBox.Show("Please Fill All Fields");
 
@@ -59,9 +60,12 @@ namespace TradeCalculator
                 txt_Result.Text = Math.Round((unit * Double.Parse(txt_SellValue.Text)) - (Double.Parse(txt_Investment.Text) * Double.Parse(txt_Leverage.Text)), 2).ToString();
             }
 
-            
+
 
         }
+
+
+        #region TOOLTIPS AND VALIDATIONS
 
         private void Txt_Investment_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -143,6 +147,8 @@ namespace TradeCalculator
             ssl_Info.Text = "This is your return value minus the initial investment sum (leverage mod applied)";
         }
     }
+    #endregion
+
 }
 
 

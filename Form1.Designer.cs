@@ -43,6 +43,8 @@
             this.btn_Clear = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ssl_Info = new System.Windows.Forms.ToolStripStatusLabel();
+            this.txt_Required = new System.Windows.Forms.TextBox();
+            this.lbl_Required = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -190,11 +192,33 @@
             this.ssl_Info.Name = "ssl_Info";
             this.ssl_Info.Size = new System.Drawing.Size(0, 17);
             // 
+            // txt_Required
+            // 
+            this.txt_Required.Location = new System.Drawing.Point(352, 162);
+            this.txt_Required.Name = "txt_Required";
+            this.txt_Required.Size = new System.Drawing.Size(100, 20);
+            this.txt_Required.TabIndex = 12;
+            this.txt_Required.Visible = false;
+            // 
+            // lbl_Required
+            // 
+            this.lbl_Required.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbl_Required.AutoSize = true;
+            this.lbl_Required.Location = new System.Drawing.Point(358, 146);
+            this.lbl_Required.Name = "lbl_Required";
+            this.lbl_Required.Size = new System.Drawing.Size(85, 13);
+            this.lbl_Required.TabIndex = 13;
+            this.lbl_Required.Text = "Required Return";
+            this.lbl_Required.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbl_Required.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 286);
+            this.Controls.Add(this.lbl_Required);
+            this.Controls.Add(this.txt_Required);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.btn_Calculate);
@@ -236,6 +260,8 @@
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel ssl_Info;
+        private System.Windows.Forms.TextBox txt_Required;
+        private System.Windows.Forms.Label lbl_Required;
     }
 }
 
