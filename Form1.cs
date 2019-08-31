@@ -13,6 +13,7 @@ namespace TradeCalculator
     public partial class Form1 : Form
     {
         public double unit = 0;
+        public double unitR = 0;
 
         public Form1()
         {
@@ -24,20 +25,68 @@ namespace TradeCalculator
 
         }
 
-        private void Btn_Clear_Click(object sender, EventArgs e)
+
+        #region V 1.0.2 CODE
+
+        private void Btn_CalculateR_Click(object sender, EventArgs e)
         {
-            txt_BuyValue.Text = "";
-            txt_SellValue.Text = "";
-            txt_Leverage.Text = "";
-            txt_Investment.Text = "";
-            txt_Result.Text = "";
-            
+
+            double investValwLmod = (Double.Parse(txt_InvestmentR.Text) * Double.Parse(txt_LeverageR.Text));
+            double returnVal = Double.Parse(txt_RequiredReturn.Text);
+
+
+            // Checks wether feilds have been filled
+            if (txt_LeverageR.Text == "" || txt_InvestmentR.Text == "" || txt_BuyValueR.Text == "" || txt_RequiredReturn.Text == "")
+            {
+                MessageBox.Show("Please Fill All Fields");
+
+            }
+            else
+            {
+                // Sets default Leverage to 1
+                if (Double.Parse(txt_LeverageR.Text) < 1)
+                {
+                    txt_Leverage.Text = "1";
+                }
+                // Caps Leverage to 10
+                if (Double.Parse(txt_LeverageR.Text) > 10)
+                {
+                    txt_Leverage.Text = "10";
+                }
+
+                // Calculates how many units were bought (leverage applied)
+                unitR = ((Double.Parse(txt_InvestmentR.Text) / Double.Parse(txt_BuyValueR.Text)) * Double.Parse(txt_LeverageR.Text));
+
+                rtb_Log.Text = unitR.ToString(); // Log -- Will Delete
+
+                //Storing current Value
+                double currentVal = Double.Parse(txt_BuyValueR.Text) * unitR;
+                
+                rtb_Log.AppendText("\n" + currentVal.ToString()); // Log -- Will Delete
+
+                //Code to work out what value to sell at to meet the required return
+                // goes here ..
+
+                // Placeholder..
+                
+                //
+                //
+
+
+
+                
+            }
         }
+
+        #endregion
+
+        #region V 1.0.1 CODE
+
         private void Btn_Calculate_Click(object sender, EventArgs e)
         {
 
-            
 
+            // Checks wether feilds have been filled
             if (txt_Leverage.Text == "" || txt_Investment.Text == "" || txt_BuyValue.Text == "" || txt_SellValue.Text == "")
             {
                 MessageBox.Show("Please Fill All Fields");
@@ -45,18 +94,21 @@ namespace TradeCalculator
             }
             else
             {
+                // Sets default Leverage to 1
                 if (Double.Parse(txt_Leverage.Text) < 1)
                 {
                     txt_Leverage.Text = "1";
                 }
-
+                // Caps Leverage to 10
                 if (Double.Parse(txt_Leverage.Text) > 10)
                 {
                     txt_Leverage.Text = "10";
                 }
 
+                // Calculates how many units were bought (leverage applied)
                 unit = ((Double.Parse(txt_Investment.Text) / Double.Parse(txt_BuyValue.Text)) * Double.Parse(txt_Leverage.Text));
 
+                // Calculated profit / loss, initial investment * leverage have been subtracted from total 
                 txt_Result.Text = Math.Round((unit * Double.Parse(txt_SellValue.Text)) - (Double.Parse(txt_Investment.Text) * Double.Parse(txt_Leverage.Text)), 2).ToString();
             }
 
@@ -64,8 +116,20 @@ namespace TradeCalculator
 
         }
 
+        private void Btn_Clear_Click(object sender, EventArgs e)
+        {
+            txt_BuyValue.Text = "";
+            txt_SellValue.Text = "";
+            txt_Leverage.Text = "";
+            txt_Investment.Text = "";
+            txt_Result.Text = "";
 
-        #region TOOLTIPS AND VALIDATIONS
+        }
+
+        #endregion
+
+
+        #region TOOLTIPS AND VALIDATIONS (all versions)
 
         private void Txt_Investment_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -80,6 +144,8 @@ namespace TradeCalculator
                 e.Handled = true;
             };
         }
+
+
 
         private void Txt_BuyValue_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -146,6 +212,8 @@ namespace TradeCalculator
         {
             ssl_Info.Text = "This is your return value minus the initial investment sum (leverage mod applied)";
         }
+
+        
     }
     #endregion
 

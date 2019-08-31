@@ -8,3 +8,13 @@ C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Deb
 C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.csproj.CoreCompileInputs.cache
 C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.exe
 C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator\obj\Debug\TradeCalculator.pdb
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\bin\Debug\TradeCalculator.exe.config
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\bin\Debug\TradeCalculator.exe
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\bin\Debug\TradeCalculator.pdb
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\obj\Debug\TradeCalculator.csprojAssemblyReference.cache
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\obj\Debug\TradeCalculator.Form1.resources
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\obj\Debug\TradeCalculator.Properties.Resources.resources
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\obj\Debug\TradeCalculator.csproj.GenerateResource.cache
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\obj\Debug\TradeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\obj\Debug\TradeCalculator.exe
+C:\Users\allan\OneDrive\Documents\GitHub\TradeCalculator\TradeCalculator V.1.0.2\obj\Debug\TradeCalculator.pdb
