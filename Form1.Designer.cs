@@ -43,16 +43,19 @@
             this.btn_Clear = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ssl_Info = new System.Windows.Forms.ToolStripStatusLabel();
-            this.txt_Required = new System.Windows.Forms.TextBox();
-            this.lbl_Required = new System.Windows.Forms.Label();
+            this.tab_Calculators = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.statusStrip1.SuspendLayout();
+            this.tab_Calculators.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_Investment
             // 
             this.lbl_Investment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_Investment.AutoSize = true;
-            this.lbl_Investment.Location = new System.Drawing.Point(129, 30);
+            this.lbl_Investment.Location = new System.Drawing.Point(82, 23);
             this.lbl_Investment.Name = "lbl_Investment";
             this.lbl_Investment.Size = new System.Drawing.Size(83, 13);
             this.lbl_Investment.TabIndex = 0;
@@ -62,7 +65,7 @@
             // 
             this.lbl_BuyValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_BuyValue.AutoSize = true;
-            this.lbl_BuyValue.Location = new System.Drawing.Point(262, 30);
+            this.lbl_BuyValue.Location = new System.Drawing.Point(215, 23);
             this.lbl_BuyValue.Name = "lbl_BuyValue";
             this.lbl_BuyValue.Size = new System.Drawing.Size(55, 13);
             this.lbl_BuyValue.TabIndex = 1;
@@ -73,7 +76,7 @@
             // 
             this.lbl_Leverage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_Leverage.AutoSize = true;
-            this.lbl_Leverage.Location = new System.Drawing.Point(143, 69);
+            this.lbl_Leverage.Location = new System.Drawing.Point(96, 62);
             this.lbl_Leverage.Name = "lbl_Leverage";
             this.lbl_Leverage.Size = new System.Drawing.Size(52, 13);
             this.lbl_Leverage.TabIndex = 2;
@@ -84,7 +87,7 @@
             // 
             this.lbl_SellValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_SellValue.AutoSize = true;
-            this.lbl_SellValue.Location = new System.Drawing.Point(262, 69);
+            this.lbl_SellValue.Location = new System.Drawing.Point(215, 62);
             this.lbl_SellValue.Name = "lbl_SellValue";
             this.lbl_SellValue.Size = new System.Drawing.Size(54, 13);
             this.lbl_SellValue.TabIndex = 3;
@@ -94,7 +97,7 @@
             // txt_Investment
             // 
             this.txt_Investment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_Investment.Location = new System.Drawing.Point(123, 46);
+            this.txt_Investment.Location = new System.Drawing.Point(76, 39);
             this.txt_Investment.Name = "txt_Investment";
             this.txt_Investment.Size = new System.Drawing.Size(100, 20);
             this.txt_Investment.TabIndex = 4;
@@ -104,7 +107,7 @@
             // txt_BuyValue
             // 
             this.txt_BuyValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_BuyValue.Location = new System.Drawing.Point(243, 46);
+            this.txt_BuyValue.Location = new System.Drawing.Point(196, 39);
             this.txt_BuyValue.Name = "txt_BuyValue";
             this.txt_BuyValue.Size = new System.Drawing.Size(100, 20);
             this.txt_BuyValue.TabIndex = 5;
@@ -114,7 +117,7 @@
             // txt_Leverage
             // 
             this.txt_Leverage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_Leverage.Location = new System.Drawing.Point(123, 85);
+            this.txt_Leverage.Location = new System.Drawing.Point(76, 78);
             this.txt_Leverage.Name = "txt_Leverage";
             this.txt_Leverage.Size = new System.Drawing.Size(100, 20);
             this.txt_Leverage.TabIndex = 6;
@@ -124,7 +127,7 @@
             // txt_SellValue
             // 
             this.txt_SellValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_SellValue.Location = new System.Drawing.Point(243, 85);
+            this.txt_SellValue.Location = new System.Drawing.Point(196, 78);
             this.txt_SellValue.Name = "txt_SellValue";
             this.txt_SellValue.Size = new System.Drawing.Size(100, 20);
             this.txt_SellValue.TabIndex = 7;
@@ -134,7 +137,7 @@
             // txt_Result
             // 
             this.txt_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txt_Result.Location = new System.Drawing.Point(182, 162);
+            this.txt_Result.Location = new System.Drawing.Point(135, 155);
             this.txt_Result.Name = "txt_Result";
             this.txt_Result.Size = new System.Drawing.Size(100, 20);
             this.txt_Result.TabIndex = 8;
@@ -144,7 +147,7 @@
             // 
             this.lbl_Result.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_Result.AutoSize = true;
-            this.lbl_Result.Location = new System.Drawing.Point(214, 146);
+            this.lbl_Result.Location = new System.Drawing.Point(167, 139);
             this.lbl_Result.Name = "lbl_Result";
             this.lbl_Result.Size = new System.Drawing.Size(39, 13);
             this.lbl_Result.TabIndex = 9;
@@ -154,7 +157,7 @@
             // btn_Calculate
             // 
             this.btn_Calculate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btn_Calculate.Location = new System.Drawing.Point(196, 120);
+            this.btn_Calculate.Location = new System.Drawing.Point(149, 113);
             this.btn_Calculate.MaximumSize = new System.Drawing.Size(75, 23);
             this.btn_Calculate.MinimumSize = new System.Drawing.Size(75, 23);
             this.btn_Calculate.Name = "btn_Calculate";
@@ -167,7 +170,7 @@
             // btn_Clear
             // 
             this.btn_Clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btn_Clear.Location = new System.Drawing.Point(196, 188);
+            this.btn_Clear.Location = new System.Drawing.Point(149, 181);
             this.btn_Clear.MaximumSize = new System.Drawing.Size(75, 23);
             this.btn_Clear.MinimumSize = new System.Drawing.Size(75, 23);
             this.btn_Clear.Name = "btn_Clear";
@@ -181,7 +184,7 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ssl_Info});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 264);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 289);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(464, 22);
             this.statusStrip1.TabIndex = 11;
@@ -192,46 +195,56 @@
             this.ssl_Info.Name = "ssl_Info";
             this.ssl_Info.Size = new System.Drawing.Size(0, 17);
             // 
-            // txt_Required
+            // tab_Calculators
             // 
-            this.txt_Required.Location = new System.Drawing.Point(352, 162);
-            this.txt_Required.Name = "txt_Required";
-            this.txt_Required.Size = new System.Drawing.Size(100, 20);
-            this.txt_Required.TabIndex = 12;
-            this.txt_Required.Visible = false;
+            this.tab_Calculators.AccessibleName = "";
+            this.tab_Calculators.Controls.Add(this.tabPage1);
+            this.tab_Calculators.Controls.Add(this.tabPage2);
+            this.tab_Calculators.Location = new System.Drawing.Point(42, 21);
+            this.tab_Calculators.Name = "tab_Calculators";
+            this.tab_Calculators.SelectedIndex = 0;
+            this.tab_Calculators.Size = new System.Drawing.Size(378, 254);
+            this.tab_Calculators.TabIndex = 12;
             // 
-            // lbl_Required
+            // tabPage1
             // 
-            this.lbl_Required.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbl_Required.AutoSize = true;
-            this.lbl_Required.Location = new System.Drawing.Point(358, 146);
-            this.lbl_Required.Name = "lbl_Required";
-            this.lbl_Required.Size = new System.Drawing.Size(85, 13);
-            this.lbl_Required.TabIndex = 13;
-            this.lbl_Required.Text = "Required Return";
-            this.lbl_Required.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lbl_Required.Visible = false;
+            this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.Controls.Add(this.lbl_Investment);
+            this.tabPage1.Controls.Add(this.lbl_BuyValue);
+            this.tabPage1.Controls.Add(this.btn_Clear);
+            this.tabPage1.Controls.Add(this.lbl_Leverage);
+            this.tabPage1.Controls.Add(this.btn_Calculate);
+            this.tabPage1.Controls.Add(this.lbl_SellValue);
+            this.tabPage1.Controls.Add(this.lbl_Result);
+            this.tabPage1.Controls.Add(this.txt_Investment);
+            this.tabPage1.Controls.Add(this.txt_Result);
+            this.tabPage1.Controls.Add(this.txt_BuyValue);
+            this.tabPage1.Controls.Add(this.txt_SellValue);
+            this.tabPage1.Controls.Add(this.txt_Leverage);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(370, 228);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Retun Calc";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(370, 228);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Required Return";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 286);
-            this.Controls.Add(this.lbl_Required);
-            this.Controls.Add(this.txt_Required);
+            this.ClientSize = new System.Drawing.Size(464, 311);
+            this.Controls.Add(this.tab_Calculators);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.btn_Clear);
-            this.Controls.Add(this.btn_Calculate);
-            this.Controls.Add(this.lbl_Result);
-            this.Controls.Add(this.txt_Result);
-            this.Controls.Add(this.txt_SellValue);
-            this.Controls.Add(this.txt_Leverage);
-            this.Controls.Add(this.txt_BuyValue);
-            this.Controls.Add(this.txt_Investment);
-            this.Controls.Add(this.lbl_SellValue);
-            this.Controls.Add(this.lbl_Leverage);
-            this.Controls.Add(this.lbl_BuyValue);
-            this.Controls.Add(this.lbl_Investment);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(480, 325);
             this.Name = "Form1";
@@ -239,6 +252,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tab_Calculators.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,8 +276,9 @@
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel ssl_Info;
-        private System.Windows.Forms.TextBox txt_Required;
-        private System.Windows.Forms.Label lbl_Required;
+        private System.Windows.Forms.TabControl tab_Calculators;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
 
