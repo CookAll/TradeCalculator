@@ -13,7 +13,7 @@ namespace TradeCalculator
     public partial class Form1 : Form
     {
         public double unit = 0;
-        public double unitR = 0;
+        
 
         public Form1()
         {
@@ -28,55 +28,7 @@ namespace TradeCalculator
 
         #region V 1.0.2 CODE
 
-        private void Btn_CalculateR_Click(object sender, EventArgs e)
-        {
-
-            double investValwLmod = (Double.Parse(txt_InvestmentR.Text) * Double.Parse(txt_LeverageR.Text));
-            double returnVal = Double.Parse(txt_RequiredReturn.Text);
-
-
-            // Checks wether feilds have been filled
-            if (txt_LeverageR.Text == "" || txt_InvestmentR.Text == "" || txt_BuyValueR.Text == "" || txt_RequiredReturn.Text == "")
-            {
-                MessageBox.Show("Please Fill All Fields");
-
-            }
-            else
-            {
-                // Sets default Leverage to 1
-                if (Double.Parse(txt_LeverageR.Text) < 1)
-                {
-                    txt_Leverage.Text = "1";
-                }
-                // Caps Leverage to 10
-                if (Double.Parse(txt_LeverageR.Text) > 10)
-                {
-                    txt_Leverage.Text = "10";
-                }
-
-                // Calculates how many units were bought (leverage applied)
-                unitR = ((Double.Parse(txt_InvestmentR.Text) / Double.Parse(txt_BuyValueR.Text)) * Double.Parse(txt_LeverageR.Text));
-
-                rtb_Log.Text = unitR.ToString(); // Log -- Will Delete
-
-                //Storing current Value
-                double currentVal = Double.Parse(txt_BuyValueR.Text) * unitR;
-                
-                rtb_Log.AppendText("\n" + currentVal.ToString()); // Log -- Will Delete
-
-                //Code to work out what value to sell at to meet the required return
-                // goes here ..
-
-                // Placeholder..
-                
-                //
-                //
-
-
-
-                
-            }
-        }
+        // Code Here ..
 
         #endregion
 
@@ -110,6 +62,12 @@ namespace TradeCalculator
 
                 // Calculated profit / loss, initial investment * leverage have been subtracted from total 
                 txt_Result.Text = Math.Round((unit * Double.Parse(txt_SellValue.Text)) - (Double.Parse(txt_Investment.Text) * Double.Parse(txt_Leverage.Text)), 2).ToString();
+
+                double markdown;
+
+                markdown = Double.Parse(txt_Result.Text)*0.2;
+
+                txt_TaxedReturn.Text = (Double.Parse(txt_Result.Text) - markdown).ToString();
             }
 
 
@@ -123,6 +81,7 @@ namespace TradeCalculator
             txt_Leverage.Text = "";
             txt_Investment.Text = "";
             txt_Result.Text = "";
+            txt_TaxedReturn.Text = "";
 
         }
 
